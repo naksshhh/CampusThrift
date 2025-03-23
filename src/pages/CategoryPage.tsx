@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Navbar from '@/components/layout/Navbar';
 import { mockListings, mockCategories } from '@/data/mockData';
 import ListingCard from '@/components/listing/ListingCard';
@@ -75,7 +75,9 @@ const CategoryPage = () => {
           <div className="container max-w-6xl text-center py-16">
             <h1 className="text-3xl font-bold mb-4">Category Not Found</h1>
             <p className="text-muted-foreground mb-8">Sorry, the category you're looking for doesn't exist.</p>
-            <Button href="/categories" className="inline-flex">Browse All Categories</Button>
+            <Button asChild>
+              <Link to="/categories" className="inline-flex">Browse All Categories</Link>
+            </Button>
           </div>
         </main>
       </div>
