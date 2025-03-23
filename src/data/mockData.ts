@@ -79,3 +79,58 @@ export const MOCK_LISTINGS: ListingProps[] = [
     createdAt: '2023-09-08T15:15:00Z'
   }
 ];
+
+// Add the missing mockCategories export
+export const mockCategories = [
+  {
+    id: 1,
+    name: 'Textbooks',
+    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765',
+    count: 152
+  },
+  {
+    id: 2,
+    name: 'Electronics',
+    image: 'https://images.unsplash.com/photo-1526406915894-7bcd65f60845',
+    count: 89
+  },
+  {
+    id: 3,
+    name: 'Furniture',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc',
+    count: 64
+  },
+  {
+    id: 4,
+    name: 'Clothing',
+    image: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d',
+    count: 112
+  },
+  {
+    id: 5,
+    name: 'Home Goods',
+    image: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92',
+    count: 45
+  },
+  {
+    id: 6,
+    name: 'Sports',
+    image: 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b',
+    count: 37
+  },
+  {
+    id: 7,
+    name: 'Notes',
+    image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8',
+    count: 28
+  },
+  {
+    id: 8,
+    name: 'Appliances',
+    image: 'https://images.unsplash.com/photo-1574269909862-7e1d70bb8078',
+    count: 19
+  }
+];
+
+// Add an alias for MOCK_LISTINGS to maintain backwards compatibility
+export const mockListings = MOCK_LISTINGS;
