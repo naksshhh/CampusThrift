@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <ShoppingBag className="h-8 w-8 text-primary" strokeWidth={1.5} />
-          <span className="text-xl font-medium tracking-tight">Campus<span className="text-primary font-semibold">Trade</span></span>
+          <span className="text-xl font-medium tracking-tight">Campus<span className="text-primary font-semibold">Thrift</span></span>
         </Link>
 
         {/* Desktop Navigation */}
