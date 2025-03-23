@@ -4,7 +4,7 @@ import FeaturedListings from '@/components/home/FeaturedListings';
 import CategorySection from '@/components/home/CategorySection';
 import Navbar from '@/components/layout/Navbar';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, MessageSquare, Shield, Truck } from 'lucide-react';
+import { ArrowRight, MessageSquare, Shield, Truck, ShoppingBag } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
