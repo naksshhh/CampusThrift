@@ -3,13 +3,15 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { 
-  Search, Menu, X, ShoppingBag, MessageSquare, Bell, User 
+  Search, Menu, X, ShoppingBag, MessageSquare, Bell, User, ShieldCheck
 } from 'lucide-react';
+import { usePermissions } from '@/hooks/use-permissions';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { isAdmin } = usePermissions();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,6 +47,12 @@ const Navbar = () => {
           <Link to="/categories" className="subtle-underline text-sm font-medium">Categories</Link>
           <Link to="/sell" className="subtle-underline text-sm font-medium">Sell</Link>
           <Link to="/about" className="subtle-underline text-sm font-medium">About</Link>
+          {isAdmin && (
+            <Link to="/admin" className="subtle-underline text-sm font-medium flex items-center">
+              <ShieldCheck className="h-4 w-4 mr-1" />
+              Admin
+            </Link>
+          )}
         </nav>
 
         {/* Desktop Actions */}
@@ -93,6 +101,12 @@ const Navbar = () => {
             <Link to="/categories" className="px-4 py-2 hover:bg-secondary rounded-md">Categories</Link>
             <Link to="/sell" className="px-4 py-2 hover:bg-secondary rounded-md">Sell</Link>
             <Link to="/about" className="px-4 py-2 hover:bg-secondary rounded-md">About</Link>
+            {isAdmin && (
+              <Link to="/admin" className="px-4 py-2 hover:bg-secondary rounded-md flex items-center">
+                <ShieldCheck className="h-4 w-4 mr-2" />
+                Admin Dashboard
+              </Link>
+            )}
             <div className="pt-2 border-t border-border">
               <Button className="w-full" asChild>
                 <Link to="/sell">List an Item</Link>
