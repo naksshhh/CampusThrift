@@ -17,44 +17,50 @@ const categories: Category[] = [
   { 
     name: 'Textbooks', 
     icon: <BookOpen className="h-6 w-6" />, 
-    slug: 'textbooks',
+    slug: '1',
     color: 'bg-blue-50 text-blue-600'
   },
   { 
     name: 'Electronics', 
     icon: <Laptop className="h-6 w-6" />, 
-    slug: 'electronics',
+    slug: '2',
     color: 'bg-purple-50 text-purple-600'
   },
   { 
     name: 'Furniture', 
     icon: <Sofa className="h-6 w-6" />, 
-    slug: 'furniture',
+    slug: '3',
     color: 'bg-amber-50 text-amber-600'
   },
   { 
-    name: 'Supplies', 
-    icon: <ShoppingBag className="h-6 w-6" />, 
-    slug: 'supplies',
-    color: 'bg-green-50 text-green-600'
+    name: 'Clothing', 
+    icon: <Shirt className="h-6 w-6" />, 
+    slug: '4',
+    color: 'bg-orange-50 text-orange-600'
+  },
+  { 
+    name: 'Home Goods', 
+    icon: <Home className="h-6 w-6" />, 
+    slug: '5',
+    color: 'bg-indigo-50 text-indigo-600'
   },
   { 
     name: 'Sports', 
     icon: <Bike className="h-6 w-6" />, 
-    slug: 'sports',
+    slug: '6',
     color: 'bg-red-50 text-red-600'
   },
   { 
-    name: 'Kitchen', 
-    icon: <UtensilsCrossed className="h-6 w-6" />, 
-    slug: 'kitchen',
-    color: 'bg-pink-50 text-pink-600'
+    name: 'Notes', 
+    icon: <Pencil className="h-6 w-6" />, 
+    slug: '7',
+    color: 'bg-teal-50 text-teal-600'
   },
   { 
-    name: 'Housing', 
-    icon: <Home className="h-6 w-6" />, 
-    slug: 'housing',
-    color: 'bg-indigo-50 text-indigo-600'
+    name: 'Appliances', 
+    icon: <UtensilsCrossed className="h-6 w-6" />, 
+    slug: '8',
+    color: 'bg-pink-50 text-pink-600'
   },
   { 
     name: 'Music', 
@@ -63,16 +69,10 @@ const categories: Category[] = [
     color: 'bg-cyan-50 text-cyan-600'
   },
   { 
-    name: 'Stationery', 
-    icon: <Pencil className="h-6 w-6" />, 
-    slug: 'stationery',
-    color: 'bg-teal-50 text-teal-600'
-  },
-  { 
-    name: 'Clothing', 
-    icon: <Shirt className="h-6 w-6" />, 
-    slug: 'clothing',
-    color: 'bg-orange-50 text-orange-600'
+    name: 'Supplies', 
+    icon: <ShoppingBag className="h-6 w-6" />, 
+    slug: 'supplies',
+    color: 'bg-green-50 text-green-600'
   },
 ];
 
