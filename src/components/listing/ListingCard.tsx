@@ -15,6 +15,9 @@ export interface ListingProps {
   isUrgent?: boolean;
   isNegotiable?: boolean;
   createdAt: string;
+  description?: string;
+  condition?: string;
+  sold?: boolean;
 }
 
 const ListingCard = ({ listing }: { listing: ListingProps }) => {
@@ -54,6 +57,12 @@ const ListingCard = ({ listing }: { listing: ListingProps }) => {
           {listing.isUrgent && (
             <Badge variant="destructive" className="absolute top-3 left-3">
               Urgent
+            </Badge>
+          )}
+          
+          {listing.sold && (
+            <Badge variant="secondary" className="absolute top-3 left-3 bg-gray-800 text-white">
+              Sold
             </Badge>
           )}
         </div>

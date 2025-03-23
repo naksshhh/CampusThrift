@@ -10,7 +10,9 @@ export const MOCK_LISTINGS: ListingProps[] = [
     location: 'University Library',
     category: 'Textbooks',
     isNegotiable: true,
-    createdAt: '2023-09-01T12:00:00Z'
+    createdAt: '2023-09-01T12:00:00Z',
+    description: 'Excellent condition university physics textbook, barely used. All pages are intact with minimal highlighting.',
+    condition: 'good'
   },
   {
     id: '2',
@@ -20,7 +22,9 @@ export const MOCK_LISTINGS: ListingProps[] = [
     location: 'Student Center',
     category: 'Electronics',
     isUrgent: true,
-    createdAt: '2023-09-02T14:30:00Z'
+    createdAt: '2023-09-02T14:30:00Z',
+    description: 'MacBook Pro 2019, 13-inch, 8GB RAM, 256GB SSD. Includes charger and protective case.',
+    condition: 'like_new'
   },
   {
     id: '3',
@@ -29,7 +33,9 @@ export const MOCK_LISTINGS: ListingProps[] = [
     image: 'https://images.unsplash.com/photo-1595187139760-5cedf9d3fad0',
     location: 'North Campus',
     category: 'Furniture',
-    createdAt: '2023-09-03T09:15:00Z'
+    createdAt: '2023-09-03T09:15:00Z',
+    description: 'Ergonomic desk chair with adjustable height and lumbar support. Only used for one semester.',
+    condition: 'like_new'
   },
   {
     id: '4',
@@ -38,7 +44,9 @@ export const MOCK_LISTINGS: ListingProps[] = [
     image: 'https://images.unsplash.com/photo-1564965278459-814e86dbd089',
     location: 'Math Building',
     category: 'Electronics',
-    createdAt: '2023-09-04T16:45:00Z'
+    createdAt: '2023-09-04T16:45:00Z',
+    description: 'TI-84 Plus graphing calculator in working condition. Perfect for calculus and statistics courses.',
+    condition: 'good'
   },
   {
     id: '5',
@@ -48,7 +56,9 @@ export const MOCK_LISTINGS: ListingProps[] = [
     location: 'South Campus',
     category: 'Sports',
     isNegotiable: true,
-    createdAt: '2023-09-05T11:20:00Z'
+    createdAt: '2023-09-05T11:20:00Z',
+    description: 'Trek 3500 mountain bike, 18-inch frame. Great for campus commuting or trail riding.',
+    condition: 'fair'
   },
   {
     id: '6',
@@ -58,7 +68,9 @@ export const MOCK_LISTINGS: ListingProps[] = [
     location: 'Freshman Dorms',
     category: 'Appliances',
     isUrgent: true,
-    createdAt: '2023-09-06T10:00:00Z'
+    createdAt: '2023-09-06T10:00:00Z',
+    description: 'Compact 2.7 cubic feet mini fridge with small freezer compartment. Works perfectly.',
+    condition: 'good'
   },
   {
     id: '7',
@@ -67,7 +79,9 @@ export const MOCK_LISTINGS: ListingProps[] = [
     image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8',
     location: 'Psychology Department',
     category: 'Notes',
-    createdAt: '2023-09-07T13:35:00Z'
+    createdAt: '2023-09-07T13:35:00Z',
+    description: 'Comprehensive notes for Psychology 101 covering all lectures and textbook chapters. Includes study guides for midterm and final.',
+    condition: 'new'
   },
   {
     id: '8',
@@ -76,7 +90,9 @@ export const MOCK_LISTINGS: ListingProps[] = [
     image: 'https://images.unsplash.com/photo-1584457644447-c0d637fd27ce',
     location: 'Campus Store',
     category: 'Home Goods',
-    createdAt: '2023-09-08T15:15:00Z'
+    createdAt: '2023-09-08T15:15:00Z',
+    description: 'Set of 3 plastic storage bins perfect for organizing your dorm room. Stackable design to save space.',
+    condition: 'good'
   }
 ];
 
